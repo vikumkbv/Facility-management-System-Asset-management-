@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #212f3d;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.officeMove">
+   <children>
+      <Text fill="#41c90b" fontSmoothingType="LCD" layoutX="219.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Office Move">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="97.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current room No :">
+         <font>
+            <Font name="Keep Calm Medium" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="97.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move room No     :">
+         <font>
+            <Font name="Keep Calm Medium" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="97.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff ID No            :">
+         <font>
+            <Font name="Keep Calm Medium" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Staff_Id" layoutX="289.0" layoutY="88.0" prefHeight="25.0" prefWidth="150.0" promptText="Staff ID" />
+      <TextField fx:id="current_room" layoutX="289.0" layoutY="125.0" prefHeight="25.0" prefWidth="150.0" promptText="ex : (129E, 129F, 129G)" />
+      <TextField fx:id="move_room" layoutX="289.0" layoutY="162.0" prefHeight="25.0" prefWidth="150.0" promptText="ex : (129E, 129F, 129G)" />
+      <Button fx:id="office_move_submit" layoutX="471.0" layoutY="349.0" mnemonicParsing="false" onAction="#office_move_submit" style="-fx-background-color: #32111E;" text="Submit" textFill="#13f553">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="96.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Type            :">
+         <font>
+            <Font name="Keep Calm Medium" size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="officeMoveRadioIN" layoutX="289.0" layoutY="200.0" mnemonicParsing="false" text="move in" textFill="WHITE" />
+      <RadioButton fx:id="officeMoveRadioOut" layoutX="367.0" layoutY="200.0" mnemonicParsing="false" text="move out" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="96.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose an item    :">
+         <font>
+            <Font name="Keep Calm Medium" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="97.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date                      :">
+         <font>
+            <Font name="Keep Calm Medium" size="18.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="office_move_date" layoutX="287.0" layoutY="275.0" prefHeight="25.0" prefWidth="150.0" promptText="Date" />
+      <ComboBox fx:id="itemToMove" layoutX="289.0" layoutY="236.0" prefWidth="150.0" promptText="Select Item" />
+   </children>
+</AnchorPane>

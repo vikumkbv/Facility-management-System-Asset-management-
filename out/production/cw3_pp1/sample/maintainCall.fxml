@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #212f3d;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.maintainCall">
+   <children>
+      <Text fill="#41c90b" fontSmoothingType="LCD" layoutX="199.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maintaince Call">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="65.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room No     :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="maintainRoonID" layoutX="251.0" layoutY="129.0" prefHeight="25.0" prefWidth="216.0" promptText="ex (129E, 129,F, 129G)" />
+      <Text fill="WHITE" layoutX="64.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Work to do  :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="69.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff ID        :" wrappingWidth="167.87890625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="maintainStaffID" layoutX="251.0" layoutY="82.0" prefHeight="25.0" prefWidth="216.0" promptText="Staff ID" />
+      <Text fill="WHITE" layoutX="68.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date             :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="maintainDate" layoutX="252.0" layoutY="179.0" prefHeight="25.0" prefWidth="216.0" promptText="Date" />
+      <Button layoutX="273.0" layoutY="289.0" mnemonicParsing="false" onAction="#maintainsubmit" text="Submit" />
+      <TextField fx:id="maintainwork" layoutX="252.0" layoutY="226.0" prefHeight="25.0" prefWidth="216.0" promptText="replace ligth, clean carpets etc" />
+   </children>
+</AnchorPane>

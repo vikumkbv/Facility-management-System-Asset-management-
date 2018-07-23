@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="747.0" style="-fx-background-color: #212f3d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuSelect">
+   <children>
+      <ImageView fitHeight="449.0" fitWidth="720.0" layoutX="24.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/plans.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#41c90b" layoutX="286.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building Plan">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

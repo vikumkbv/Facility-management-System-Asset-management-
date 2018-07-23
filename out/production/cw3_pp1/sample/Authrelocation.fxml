@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="856.0" style="-fx-background-color: #212f3d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#41c90b" fontSmoothingType="LCD" layoutX="210.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Office move relocation Authorized">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <TableView editable="true" layoutX="42.0" layoutY="86.0" prefHeight="422.0" prefWidth="791.0">
+         <columns>
+            <TableColumn fx:id="staffId" prefWidth="92.0" text="StaffID" />
+            <TableColumn fx:id="current_room" prefWidth="101.0" text="Current room no" />
+            <TableColumn fx:id="move_room" prefWidth="97.0" text="Move room no" />
+            <TableColumn fx:id="move_type" prefWidth="108.0" text="Movement Type" />
+            <TableColumn fx:id="items" prefWidth="130.0" text="Item" />
+            <TableColumn fx:id="date" prefWidth="130.0" text="Date" />
+            <TableColumn fx:id="status" prefWidth="130.0" text="Status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

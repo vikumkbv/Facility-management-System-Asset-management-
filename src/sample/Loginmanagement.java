@@ -43,6 +43,8 @@ public class Loginmanagement {
         {
             new Alert(Alert.AlertType.WARNING,"Nothing entered. please Enter your Username and Password").showAndWait();
         }else {
+            //mongo connect
+
             MongoClient mongoClient = DbAuth.mongoclient();
             @SuppressWarnings("deprecation")
             DB db = mongoClient.getDB("cw3pp1");
